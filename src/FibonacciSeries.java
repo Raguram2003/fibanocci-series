@@ -1,9 +1,11 @@
+import java.util.Scanner;
+
 public class FibonacciSeries {
     public static void main(String[] args) {
-        int N = 10;
-        for (int i = 0; i < N; i++) {
-            System.out.print(findfib(i) + " ");
-        }
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        System.out.print(findfib(N));
+
     }
     public static int findfib(int n)
     {
